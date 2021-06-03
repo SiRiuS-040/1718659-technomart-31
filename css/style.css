@@ -31,7 +31,11 @@
    --lavender-pink: #dc91d8;
 }
 
-.body {
+.page {
+   height: 100%;
+}
+
+.page-body {
    min-width: 940px;
    margin: 0;
    padding: 0;
@@ -42,6 +46,11 @@
    font-weight: 400;
    color: var(--black);
    background-color: var(--white);
+
+   min-height: 100%;
+   display: grid;
+   grid-template-rows: min-content 1fr min-content;
+   align-items: start;
 }
 
 .container {
@@ -227,14 +236,7 @@ img {
    background-color: var(--passionate-blueberry);
    box-shadow: inset 0px -5px 0px var(--bunting);
    display: flex;
-   justify-content: space-between;
-}
-
-.navigation__item {
-   padding-top: 16px;
-   padding-bottom: 20px;
-   padding-left: 25px;
-   padding-right: 25px;
+   justify-content: space-around;
 }
 
 .navigation__item:hover {
@@ -246,6 +248,10 @@ img {
 }
 
 .navigation__link {
+   display: block;
+   padding-top: 16px;
+   padding-bottom: 20px;
+
    text-decoration: none;
    color: var(--white);
 }
@@ -449,7 +455,7 @@ img {
 
 .catalog__pages {
    list-style: none;
-
+   text-align: center;
    padding: 10px 0 0 0;
    display: flex;
    justify-content: flex-start;
