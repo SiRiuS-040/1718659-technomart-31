@@ -10,8 +10,9 @@
    <link rel="apple-touch-icon" href="img/favicon/180.png">
    <link rel="manifest" href="manifest.webmanifest">
 
+
    <link rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic;display=swap">
+      href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic;display=swap">
    <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet">
 
@@ -24,24 +25,26 @@
    <header class="header">
       <div class="header__top">
          <div class="container">
-            <a href="index.html" class="logo">
-               <img src="img/logo/logo-technomart.svg" width="108" height="18" alt="Логотип Техномарт">
-            </a>
-            <form action="https://echo.htmlacademy.ru" method="get" class="header__search search-form">
-               <label class="search-form__label">
-                  <input type="search" placeholder="Поиск:" class="search-form__field" />
-               </label>
-            </form>
-            <div class="header__product-options product-options">
-               <a href="blank.html" class="product-options__item bookmarks">Закладки: <span>0</span></a>
-               <a href="blank.html" class="product-options__item cart">Корзина: <span>0</span></a>
-               <a href="blank.html" class="product-options__item--order">Оформить заказ</a>
+            <div class="header-top">
+               <a href="#" class="logo">
+                  <img src="img/logo/logo-technomart.svg" width="108" height="18" alt="Логотип Техномарт">
+               </a>
+               <form action="https://echo.htmlacademy.ru" method="get" class="header__search search-form">
+                  <label class="search-form__label">
+                     <input type="search" placeholder="Поиск:" class="search-form__field" />
+                  </label>
+               </form>
+               <div class="header__product-options product-options">
+                  <a href="blank.html" class="product-options__item bookmarks">Закладки: <span>0</span></a>
+                  <a href="blank.html" class="product-options__item cart">Корзина: <span>0</span></a>
+                  <a href="blank.html" class="product-options__item product-options__item--order">Оформить заказ</a>
+               </div>
             </div>
          </div>
       </div>
       <div class="header__bottom">
-         <div class="container">
-            <h1 class="header__title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+         <div class="container header-bottom">
+            <h1 class="header__title">Интернет-магазин <br> строительных материалов <br> и инструментов для ремонта</h1>
             <address class="header__contacts header-contacts">
                <a href="tel:+78005558628" class="header-contacts__phone">+7 800 555-86-28</a>
                <p class="header-contacts__address">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
@@ -52,8 +55,8 @@
             </div>
          </div>
       </div>
-      <nav class="header__navigation navigation">
-         <ul class="container navigation__list">
+      <nav class="container header__navigation navigation">
+         <ul class="navigation__list">
             <li class="navigation__item"><a class="navigation__link" href="index.html">Главная</a></li>
             <li class="navigation__item"><a class="navigation__link" href="blank.html">Компания</a></li>
             <li class="navigation__item"><a class="navigation__link" href="catalog.html">Каталог</a></li>
@@ -66,82 +69,86 @@
    </header>
    <main>
       <div class="container">
-         <h1>Дополнительная страница</h1>
+         <h1 class="section-title">Дополнительная страница</h1>
       </div>
    </main>
-   <footer class="footer">
-      <div class="footer__top">
+   <footer>
+      <section class="footer footer-top">
          <div class="container">
-            <div class="footer__section company-info">
-               <a href="#" class="logo company-info__logo">
-                  <img src="img/logo/logo-technomart.svg" width="138" height="23" alt="Логотип Техномарт">
-               </a>
-               <p class="company-info__adress">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П +7 800 555-86-28</p>
-            </div>
-            <ul class="footer__section footer-nav">
-               <li class="footer-nav__item">
-                  <a href="blank.html" class="footer-nav__link">Компания</a>
-               </li>
-               <li class="footer-nav__item">
-                  <a href="blank.html#" class="footer-nav__link">Новости</a>
-               </li>
-               <li class="footer-nav__item">
-                  <a href="catalog.html" class="footer-nav__link">Каталог</a>
-               </li>
-               <li class="footer-nav__item">
-                  <a href="blank.html" class="footer-nav__link">Доставка</a>
-               </li>
-               <li class="footer-nav__item">
-                  <a href="blank.html" class="footer-nav__link">Контакты</a>
-               </li>
-            </ul>
-            <ul class="footer__section footer-nav">
-               <li class="footer-nav__item">
-                  <a href="blank.html" class="footer-nav__link footer-nav__link--goods">Материалы</a>
-               </li>
-               <li class="footer-nav__item">
-                  <a href="blank.html" class="footer-nav__link footer-nav__link--goods">Техника</a>
-               </li>
-               <li class="footer-nav__item">
-                  <a href="blank.html" class="footer-nav__link footer-nav__link--goods">Инструмент</a>
-               </li>
-               <li class="footer-nav__item">
-                  <a href="blank.html" class="footer-nav__link footer-nav__link--goods">Спецпредложения</a>
-               </li>
-            </ul>
-         </div>
-      </div>
-      <div class="footer__bottom">
-         <div class="container">
-            <p class="footer__copyright">© 2010–2021 Компания «Техномарт» <br>Все права защищены</p>
-            <section class="footer__section social">
-               <h2 class="social__title">Мы в сети!</h2>
-               <ul class="socials__list">
-                  <li class="social__item">
-                     <a href="blank.html" class="social__link">
-                        <img src="img/socials/icon-vk.svg" width="25" height="14" alt="VK">
-                     </a>
+            <div class="footer__top">
+               <div class="footer__section company-info">
+                  <a href="index.html" class="logo company-info__logo">
+                     <img src="img/logo/logo-technomart.svg" width="138" height="23" alt="Логотип Техномарт">
+                  </a>
+                  <p class="company-info__adress">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П +7 800 555-86-28</p>
+               </div>
+               <ul class="footer__section footer-nav">
+                  <li class="footer-nav__item">
+                     <a href="blank.html" class="footer-nav__link">Компания</a>
                   </li>
-                  <li class="social__item">
-                     <a href="blank.html" class="social__link">
-                        <img src="img/socials/icon-fb.svg" width="12" height="22" alt="FB">
-                     </a>
+                  <li class="footer-nav__item">
+                     <a href="blank.html#" class="footer-nav__link">Новости</a>
                   </li>
-                  <li class="social__item">
-                     <a href="blank.html" class="social__link">
-                        <img src="img/socials/icon-inst.svg" width="21" height="21" alt="Inst">
-                     </a>
+                  <li class="footer-nav__item">
+                     <a href="catalog.html" class="footer-nav__link">Каталог</a>
+                  </li>
+                  <li class="footer-nav__item">
+                     <a href="blank.html" class="footer-nav__link">Доставка</a>
+                  </li>
+                  <li class="footer-nav__item">
+                     <a href="blank.html" class="footer-nav__link">Контакты</a>
                   </li>
                </ul>
-            </section>
-            <p class="footer__feedback feedback">Обратная связь: <br>
-               <a href="mailto:mail@htmlacademy.ru" class="feedback__link">mail@htmlacademy.ru</a>
-            </p>
-            <p class="footer__feedback feedback">Разработано — <br>
-               <a href="https://htmlacademy.ru/" class="feedback__link" target="_blank">htmlacademy.ru</a>
-            </p>
+               <ul class="footer__section footer-nav">
+                  <li class="footer-nav__item">
+                     <a href="blank.html" class="footer-nav__link footer-nav__link--goods">Материалы</a>
+                  </li>
+                  <li class="footer-nav__item">
+                     <a href="blank.html" class="footer-nav__link footer-nav__link--goods">Техника</a>
+                  </li>
+                  <li class="footer-nav__item">
+                     <a href="blank.html" class="footer-nav__link footer-nav__link--goods">Инструмент</a>
+                  </li>
+                  <li class="footer-nav__item">
+                     <a href="blank.html" class="footer-nav__link footer-nav__link--goods">Спецпредложения</a>
+                  </li>
+               </ul>
+            </div>
          </div>
-      </div>
+      </section>
+      <section class="footer footer-bottom">
+         <div class="container">
+            <div class="footer__bottom">
+               <p class="footer__copyright">© 2010–2021 Компания «Техномарт» <br>Все права защищены</p>
+               <section class="footer__section social">
+                  <h2 class="social__title">Мы в сети!</h2>
+                  <ul class="socials__list">
+                     <li class="social__item">
+                        <a href="blank.html" class="social__link">
+                           <img src="img/socials/icon-vk.svg" width="25" height="14" alt="VK">
+                        </a>
+                     </li>
+                     <li class="social__item">
+                        <a href="blank.html" class="social__link">
+                           <img src="img/socials/icon-fb.svg" width="12" height="22" alt="FB">
+                        </a>
+                     </li>
+                     <li class="social__item">
+                        <a href="blank.html" class="social__link">
+                           <img src="img/socials/icon-inst.svg" width="21" height="21" alt="Inst">
+                        </a>
+                     </li>
+                  </ul>
+               </section>
+               <p class="footer__feedback feedback">Обратная связь: <br>
+                  <a href="mailto:mail@htmlacademy.ru" class="feedback__link">mail@htmlacademy.ru</a>
+               </p>
+               <p class="footer__feedback feedback">Разработано — <br>
+                  <a href="https://htmlacademy.ru/" class="feedback__link" target="_blank">htmlacademy.ru</a>
+               </p>
+            </div>
+         </div>
+      </section>
    </footer>
 </body>
 
