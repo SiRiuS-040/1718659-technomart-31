@@ -44,7 +44,7 @@
     </div>
     <div class="header__bottom">
       <div class="container header-bottom">
-        <h1 class="header__title">Интернет-магазин <br> строительных материалов <br> и инструментов для ремонта</h1>
+        <h1 class="header__title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
         <address class="header__contacts header-contacts">
           <a href="tel:+78005558628" class="header-contacts__phone">+7 800 555-86-28</a>
           <p class="header-contacts__address">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
@@ -244,24 +244,24 @@
           </ul>
           <ul class="services__list services-content">
             <li class="services-content__item service service-delivery">
+              <!-- style="display: none;"  -->
               <h3 class="service__title">Доставка</h3>
-              <p class="service__desc">Мы с удовольствием доставим ваш товар прямо <br> к вашему подъезду совершенно
-                бесплатно! <br> Ведь мы
-                неплохо заработаем, <br> поднимая его на ваш этаж!</p>
+              <p class="service__desc">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно
+                бесплатно!</p>
+              <p class="service__desc">Ведь мы неплохо заработаем,</p>
+              <p class="service__desc">поднимая его на ваш этаж!</p>
             </li>
-            <li class="services-content__item service service-warranty" style="display: none;">
+            <li class="services-content__item service service-warranty">
               <h3 class="service__title">Гарантия</h3>
-              <p class="service__desc">Если купленный у нас товар поломается или заискрит, <br> а также в случае пожара,
-                спровоцированного его
-                <br> возгоранием, вы всегда можете быть уверены в нашей <br> гарантии. Мы обменяем сгоревший товар на
-                новый. <br> Дом уж восстановите как-нибудь сами.
-              </p>
+              <p class="service__desc">Если купленный у нас товар поломается или заискрит, а также в случае пожара,
+                спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший
+                товар на новый. </p>
+              <p class="service__desc">Дом уж восстановите как-нибудь сами.</p>
             </li>
-            <li class="services-content__item service service-credit" style="display: none;">
+            <li class="services-content__item service service-credit">
               <h3 class="service__title">Кредит</h3>
-              <p class="service__desc">Залезть в долговую яму стало проще! <br> Кредитные консультанты придут вам на
-                помощь.
-              </p>
+              <p class="service__desc">Залезть в долговую яму стало проще!</p>
+              <p class="service__desc">Кредитные консультанты придут вам на помощь.</p>
               <a href="#" class="service__link basic-button">Отправить заявку</a>
             </li>
           </ul>
@@ -273,11 +273,10 @@
         <div class="about">
           <div class="about__section market-info">
             <h3 class="about__title">Компания «Техномарт»</h3>
-            <p class="about__desc">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для <br> ремонта и
-              строительства не
-              оставит равнодушными любителей сэкономить на <br> гастарбайтерах.</p>
-            <p class="about__desc">Мы можем доставить ваш товар в самые отдаленные точки России! <br>
-              Техномарт работает со многими транспортными компаниями:</p>
+            <p class="about__desc">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
+              строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+            <h4 class="about__title-logistics">Мы можем доставить ваш товар в самые отдаленные точки России!</h4>
+            <p class="about__desc">Техномарт работает со многими транспортными компаниями:</p>
             <ul class="about__list">
               <li class="about__item">Деловые линии</li>
               <li class="about__item">Автотрейдинг</li>
@@ -287,7 +286,8 @@
           </div>
           <div class="about__section contacts">
             <h3 class="about__title">Контакты</h3>
-            <p class="about__desc">Вы можете забрать товар сами, <br> заехав в наш офис:</p>
+            <p class="about__desc contact-desc">Вы можете забрать товар сами,</p>
+            <p class="about__desc contact-desc">заехав в наш офис:</p>
             <a href="#" class="about__link about__link--map">
               <img src="img/about-us-map.jpg" alt="г. Санкт-Петербург, наб. Реки Карповки, 5 лит П" width="300"
                 height="158">
@@ -306,7 +306,8 @@
             <a href="#" class="logo company-info__logo">
               <img src="img/logo/logo-technomart.svg" width="138" height="23" alt="Логотип Техномарт">
             </a>
-            <p class="company-info__adress">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П +7 800 555-86-28</p>
+            <p class="company-info__adress">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
+            <p class="company-info__phone">+7 800 555-86-28</p>
           </div>
           <ul class="footer__section footer-nav">
             <li class="footer-nav__item">
@@ -345,7 +346,10 @@
     <section class="footer footer-bottom">
       <div class="container">
         <div class="footer__bottom">
-          <p class="footer__copyright">© 2010–2021 Компания «Техномарт» <br>Все права защищены</p>
+          <div class="footer__copyright copyright">
+            <p class="copyright__desc">© 2010–2021 Компания «Техномарт»</p>
+            <p class="copyright__desc">Все права защищены</p>
+          </div>
           <section class="footer__section social">
             <h2 class="social__title">Мы в сети!</h2>
             <ul class="socials__list">
@@ -366,10 +370,10 @@
               </li>
             </ul>
           </section>
-          <p class="footer__feedback feedback">Обратная связь: <br>
+          <p class="footer__feedback feedback">Обратная связь:
             <a href="mailto:mail@htmlacademy.ru" class="feedback__link">mail@htmlacademy.ru</a>
           </p>
-          <p class="footer__feedback feedback">Разработано — <br>
+          <p class="footer__feedback feedback">Разработано —
             <a href="https://htmlacademy.ru/" class="feedback__link" target="_blank">htmlacademy.ru</a>
           </p>
         </div>

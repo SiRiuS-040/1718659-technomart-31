@@ -198,6 +198,7 @@ img {
    margin: 0;
    padding: 0;
    padding-left: 30px;
+   padding-right: 65px;
    color: var(--red-radish);
    font-size: 16px;
    line-height: 23px;
@@ -757,7 +758,7 @@ img {
 
 .features-slide__info {
    width: 100%;
-   padding: 23px 0 16px 24px;
+   padding: 23px 0 16px 0;
    background: var(--black-semi-025);
    position: absolute;
    top: 0;
@@ -768,6 +769,7 @@ img {
 .features-slide__title {
    margin: 0;
    padding: 0px;
+   padding-left: 24px;
    font-size: 36px;
    line-height: 36px;
    font-weight: 700;
@@ -778,6 +780,7 @@ img {
 .features-slide__description {
    margin: 0;
    padding-top: 5px;
+   padding-left: 24px;
    text-align: left;
 }
 
@@ -1031,7 +1034,7 @@ img {
 }
 
 .service-delivery {
-   background: url("../img/services/service-delivery.png") no-repeat 100% 0;
+   background: url("../img/services/service-delivery.png") no-repeat 100% 22px;
 }
 
 .service-warranty {
@@ -1052,13 +1055,15 @@ img {
 }
 
 .service__desc {
-   margin: 0 0 27px 0;
+   margin: 0;
+   max-width: 340px;
    font-family: "PT Sans", Arial, sans-serif;
    font-size: 13px;
    text-align: left;
 }
 
 .service__link {
+   margin-top: 27px;
    border-radius: 2px;
    width: 195px;
 }
@@ -1076,8 +1081,16 @@ img {
    grid-gap: 40px;
 }
 
+.about__section {
+   max-width: 480px;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+}
+
 .about__title {
    margin: 0;
+   margin-bottom: 24px;
    padding: 0;
    font-size: 30px;
    line-height: 30px;
@@ -1089,10 +1102,18 @@ img {
 .about__desc {
    margin: 0;
    padding: 0;
-   margin-top: 24px;
    font-family: "PT Sans", Arial, sans-serif;
    font-size: 13px;
    text-align: left;
+}
+
+.about__title-logistics {
+   padding: 0;
+   margin: 0;
+   margin-top: 25px;
+   font-family: "PT Sans", Arial, sans-serif;
+   font-size: 13px;
+   font-weight: 400;
 }
 
 .about__list {
@@ -1111,6 +1132,7 @@ img {
 }
 
 .about__link {
+   margin-top: auto;
    width: 220px;
 }
 
@@ -1127,6 +1149,7 @@ img {
    width: 100%;
    line-height: 0;
    margin-top: 32px;
+   margin-bottom: 22px;
 }
 
 .about__link--form {
@@ -1144,7 +1167,7 @@ img {
 
 .footer__top {
    display: grid;
-   grid-template-columns: 336 1fr;
+   grid-template-columns: 340px 1fr;
    grid-template-rows: min-content 1fr;
    grid-template-areas:
       "company-info footer-nav"
@@ -1153,6 +1176,7 @@ img {
 
 .company-info {
    grid-area: company-info;
+   color: var(--distant-horizon);
 }
 
 .footer-nav {
@@ -1174,7 +1198,7 @@ img {
 }
 
 .company-info {
-   width: 336px;
+   width: 340px;
 }
 
 .company-info__adress {
@@ -1182,8 +1206,11 @@ img {
    padding: 0;
    margin: 0;
    margin-top: 22px;
+}
+
+.company-info__phone {
+   margin: 0;
    margin-bottom: 54px;
-   color: var(--distant-horizon);
 }
 
 .footer-nav__link {
@@ -1224,6 +1251,10 @@ img {
    font-size: 16px;
    line-height: 18px;
    text-align: left;
+}
+
+.copyright__desc {
+   margin: 0;
 }
 
 .social__title {
