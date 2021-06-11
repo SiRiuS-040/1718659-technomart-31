@@ -24,35 +24,31 @@
 <body class="page-body">
   <header class="header">
     <div class="header__top">
-      <div class="container">
-        <div class="header-top">
-          <a href="#" class="logo">
-            <img src="img/logo/logo-technomart.svg" width="108" height="18" alt="Логотип Техномарт">
-          </a>
-          <form action="https://echo.htmlacademy.ru" method="get" class="header__search search-form">
-            <label class="search-form__label">
-              <input type="search" placeholder="Поиск:" class="search-form__field" />
-            </label>
-          </form>
-          <div class="header__product-options product-options">
-            <a href="blank.html" class="product-options__item bookmarks">Закладки: <span>0</span></a>
-            <a href="blank.html" class="product-options__item cart">Корзина: <span>0</span></a>
-            <a href="blank.html" class="product-options__item product-options__item--order">Оформить заказ</a>
-          </div>
+      <div class="header-top container">
+        <a href="#" class="logo">
+          <img src="img/logo/logo-technomart.svg" width="108" height="18" alt="Логотип Техномарт">
+        </a>
+        <form action="https://echo.htmlacademy.ru" method="get" class="header__search search-form">
+          <label class="search-form__label">
+            <input type="search" placeholder="Поиск:" class="search-form__field" />
+          </label>
+        </form>
+        <div class="header__product-options product-options">
+          <a href="blank.html" class="product-options__item bookmarks">Закладки: <span>0</span></a>
+          <a href="blank.html" class="product-options__item cart">Корзина: <span>0</span></a>
+          <a href="blank.html" class="product-options__item product-options__item--order">Оформить заказ</a>
         </div>
       </div>
     </div>
-    <div class="header__bottom">
-      <div class="container header-bottom">
-        <h1 class="header__title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-        <address class="header__contacts header-contacts">
-          <a href="tel:+78005558628" class="header-contacts__phone">+7 800 555-86-28</a>
-          <p class="header-contacts__address">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
-        </address>
-        <div class="header__auth auth">
-          <a href="#" class="auth__button auth__button--login">Войти</a>
-          <a href="#" class="auth__button auth__button--signup">Регистрация</a>
-        </div>
+    <div class="header__bottom container">
+      <h1 class="header__title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+      <address class="header__contacts header-contacts">
+        <a href="tel:+78005558628" class="header-contacts__phone">+7 800 555-86-28</a>
+        <p class="header-contacts__address">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
+      </address>
+      <div class="header__auth auth">
+        <a href="#" class="auth__button auth__button--login">Войти</a>
+        <a href="#" class="auth__button auth__button--signup">Регистрация</a>
       </div>
     </div>
     <nav class="container header__navigation navigation">
@@ -79,7 +75,7 @@
             <h3 class="features-item__title">Инструменты</h3>
             <a href="blank.html" class="features-item__link">на все случаи жизни</a>
           </li>
-          <li class="features__item features-item features-item--equipment">
+          <li class="features__item features-item features-item--technics">
             <h3 class="features-item__title">Техника</h3>
             <a href="blank.html" class="features-item__link">для стройки</a>
           </li>
@@ -135,7 +131,7 @@
           </li>
           <li class="popular-section__item good-item new">
             <h3 class="good-item__title">Перфоратор BOSCH BFG 3000</h3>
-            <img src="img/goods/bfg3000.jpg" width="184" height="164" alt="Перфоратор bosch bfg 3000"
+            <img src="img/goods/bfg3000.jpg" width="127" height="112" alt="Перфоратор bosch bfg 3000"
               class="good-item__image">
             <p class="good-item__price-old">22500 р.</p>
             <a href="blank.html" class="good-item__price">15500 р.</a>
@@ -146,7 +142,7 @@
           </li>
           <li class="popular-section__item good-item">
             <h3 class="good-item__title">Перфоратор BOSCH BFG 6000</h3>
-            <img src="img/goods/bfg6000.jpg" width="184" height="164" alt="Перфоратор bosch bfg 6000"
+            <img src="img/goods/bfg6000.jpg" width="144" height="128" alt="Перфоратор bosch bfg 6000"
               class="good-item__image">
             <p class="good-item__price-old">30500 р.</p>
             <a href="blank.html" class="good-item__price">25500 р.</a>
@@ -157,7 +153,7 @@
           </li>
           <li class="popular-section__item good-item new">
             <h3 class="good-item__title">Перфоратор BOSCH BFG 2000</h3>
-            <img src="img/goods/bfg2000.jpg" width="184" height="164" alt="Перфоратор bosch bfg 2000"
+            <img src="img/goods/bfg2000.jpg" width="127" height="112" alt="Перфоратор bosch bfg 2000"
               class="good-item__image">
             <p class="good-item__price-old">22500 р.</p>
             <a href="blank.html" class="good-item__price">12500 р.</a>
@@ -269,32 +265,31 @@
       </div>
     </section>
     <section class="about-section">
-      <div class="container">
-        <div class="about">
-          <div class="about__section market-info">
-            <h3 class="about__title">Компания «Техномарт»</h3>
-            <p class="about__desc">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
-              строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-            <h4 class="about__title-logistics">Мы можем доставить ваш товар в самые отдаленные точки России!</h4>
-            <p class="about__desc">Техномарт работает со многими транспортными компаниями:</p>
-            <ul class="about__list">
-              <li class="about__item">Деловые линии</li>
-              <li class="about__item">Автотрейдинг</li>
-              <li class="about__item">ЖелДорЭкспедиция</li>
-            </ul>
-            <a href="blank.html" class="about__link basic-button">Подробнее о компании</a>
-          </div>
-          <div class="about__section contacts">
-            <h3 class="about__title">Контакты</h3>
-            <p class="about__desc contact-desc">Вы можете забрать товар сами,</p>
-            <p class="about__desc contact-desc">заехав в наш офис:</p>
-            <a href="#" class="about__link about__link--map">
-              <img src="img/about-us-map.jpg" alt="г. Санкт-Петербург, наб. Реки Карповки, 5 лит П" width="300"
-                height="158">
-            </a>
-            <a href="#" class="about__link about__link--form basic-button">Заблудились? Напишите нам!</a>
-          </div>
+      <div class="container about">
+        <div class="about__section market-info">
+          <h3 class="about__title">Компания «Техномарт»</h3>
+          <p class="about__desc">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
+            строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+          <h4 class="about__title-logistics">Мы можем доставить ваш товар в самые отдаленные точки России!</h4>
+          <p class="about__desc">Техномарт работает со многими транспортными компаниями:</p>
+          <ul class="about__list">
+            <li class="about__item">Деловые линии</li>
+            <li class="about__item">Автотрейдинг</li>
+            <li class="about__item">ЖелДорЭкспедиция</li>
+          </ul>
+          <a href="blank.html" class="about__link basic-button">Подробнее о компании</a>
         </div>
+        <div class="about__section contacts">
+          <h3 class="about__title">Контакты</h3>
+          <p class="about__desc contact-desc">Вы можете забрать товар сами,</p>
+          <p class="about__desc contact-desc">заехав в наш офис:</p>
+          <a href="#" class="about__link about__link--map">
+            <img src="img/about-us-map.jpg" alt="г. Санкт-Петербург, наб. Реки Карповки, 5 лит П" width="300"
+              height="158">
+          </a>
+          <a href="#" class="about__link about__link--form basic-button">Заблудились? Напишите нам!</a>
+        </div>
+      </div>
       </div>
     </section>
   </main>
