@@ -843,15 +843,16 @@ img {
 }
 
 .popular-section__header {
+   padding-left: 28px;
+   padding-right: 14px;
    background-color: var(--silver-bird);
    display: grid;
-   grid-template-columns: 1fr 220px;
+   grid-template-columns: 1fr min-content;
    justify-content: space-between;
    align-items: center;
 }
 
 .popular-section__title {
-   margin-left: 28px;
    color: var(--passionate-blueberry);
    font-size: 30px;
    line-height: 30px;
