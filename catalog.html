@@ -16,7 +16,7 @@
       rel="stylesheet">
    <link href="css/normalize.css" rel="stylesheet">
    <link href="css/style.css" rel="stylesheet">
-
+   <link href="css/style.min.css" rel="stylesheet">
 
 
 </head>
@@ -53,7 +53,8 @@
             <p class="header-contacts__address">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
          </address>
          <div class="header__auth auth">
-            <a href="#" class="auth__button auth__button--profile auth-button">Равшан Джамшутович
+            <a href="#" class="auth__button auth__button--profile auth-button"
+               aria-label="Открыть профайл пользователя">Равшан Джамшутович
                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg"
                   class="auth-button__icon--user">
                   <path
@@ -61,7 +62,8 @@
                      fill="#C5C5C5" />
                </svg>
             </a>
-            <a href="#" class="auth__button auth__button--logout auth-button"><span class="visually-hidden">Выход из
+            <a href="#" class="auth__button auth__button--logout auth-button"
+               aria-label="Деавторизация пользователя"><span class="visually-hidden">Выход из
                   профиля</span>
                <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg"
                   class="auth-button__icon--logout">
@@ -186,7 +188,8 @@
                      </li>
                   </ul>
                </fieldset>
-               <button type="submit" class="catalog-filters__button transp-button">Показать</button>
+               <button type="submit" class="catalog-filters__button transp-button"
+                  aria-label="Показатьтовары согласно фильтру">Показать</button>
             </form>
          </section>
          <section class="catalog">
@@ -195,18 +198,20 @@
                <h4 class="sorting__title section-title">Сортировка:</h4>
                <ul class="sorting__list">
                   <li class="sorting__item">
-                     <a href="#" class="sorting__link sorting__link--active">По цене</a>
+                     <a href="#" class="sorting__link sorting__link--active" aria-label="Сортировать по цене">По
+                        цене</a>
+                  </li>
+                  <li class="sorting__item" aria-label="Сортироваить по типу">
+                     <a href="#" class="sorting__link" aria-label="Сортировать по типу">По типу</a>
                   </li>
                   <li class="sorting__item">
-                     <a href="#" class="sorting__link">По типу</a>
-                  </li>
-                  <li class="sorting__item">
-                     <a href="#" class="sorting__link">По функционалу</a>
+                     <a href="#" class="sorting__link" aria-label="Сортировать по функционалу">По функционалу</a>
                   </li>
                </ul>
                <ul class="sorting__list sorting-direcions">
                   <li class="sorting-direcions__item">
-                     <a href="#" class="sorting-direcions__link sorting__link--active">
+                     <a href="#" class="sorting-direcions__link sorting__link--active"
+                        aria-label="Сортировать по возрастанию">
                         <span class="visually-hidden">по возрастанию</span>
                         <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg"
                            class="sorting-direcions__icon sorting-direcions__icon--ascending">
@@ -215,7 +220,7 @@
                      </a>
                   </li>
                   <li class="sorting-direcions__item">
-                     <a href="#" class="sorting-direcions__link ">
+                     <a href="#" class="sorting-direcions__link" aria-label="Сортировать по убыванию">
                         <span class="visually-hidden">по убыванию</span>
                         <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg"
                            class="sorting-direcions__icon sorting-direcions__icon--descending">
@@ -235,9 +240,10 @@
                   <p class="good-item__price-old">30500 р.</p>
                   <a href="blank.html" class="good-item__price">25500 р.</a>
                   <div class="good-item__options good-options">
-                     <a href="#GoodsInCart" class="good-options__button good-options__button--buy"
-                        onclick="showCart();"><span>Купить</span></a>
-                     <a href="#" class="good-options__button good-options__button--tab">В Закладки</a>
+                     <a href="#GoodsInCart" class="good-options__button good-options__button--buy" onclick="showCart();"
+                        aria-label="Купить товар"><span>Купить</span></a>
+                     <a href="#" class="good-options__button good-options__button--tab"
+                        aria-label="Добавить товар в закладки">В Закладки</a>
                   </div>
                </li>
                <li class="catalog__item good-item">
@@ -248,9 +254,10 @@
                   <p class="good-item__price-old">30500 р.</p>
                   <a href="blank.html" class="good-item__price">25500 р.</a>
                   <div class="good-item__options good-options">
-                     <a href="#GoodsInCart" class="good-options__button good-options__button--buy"
-                        onclick="showCart();"><span>Купить</span></a>
-                     <a href="#" class="good-options__button good-options__button--tab">В Закладки</a>
+                     <a href="#GoodsInCart" class="good-options__button good-options__button--buy" onclick="showCart();"
+                        aria-label="Купить товар"><span>Купить</span></a>
+                     <a href="#" class="good-options__button good-options__button--tab"
+                        aria-label="Добавить товар в закладки">В Закладки</a>
                   </div>
                </li>
                <li class="catalog__item good-item new">
@@ -261,9 +268,10 @@
                   <p class="good-item__price-old">30500 р.</p>
                   <a href="blank.html" class="good-item__price">25500 р.</a>
                   <div class="good-item__options good-options">
-                     <a href="#GoodsInCart" class="good-options__button good-options__button--buy"
-                        onclick="showCart();"><span>Купить</span></a>
-                     <a href="#" class="good-options__button good-options__button--tab">В Закладки</a>
+                     <a href="#GoodsInCart" class="good-options__button good-options__button--buy" onclick="showCart();"
+                        aria-label="Купить товар"><span>Купить</span></a>
+                     <a href="#" class="good-options__button good-options__button--tab"
+                        aria-label="Добавить товар в закладки">В Закладки</a>
                   </div>
                </li>
                <li class="catalog__item good-item new">
@@ -274,9 +282,10 @@
                   <p class="good-item__price-old">22500 р.</p>
                   <a href="blank.html" class="good-item__price">15500 р.</a>
                   <div class="good-item__options good-options">
-                     <a href="#GoodsInCart" class="good-options__button good-options__button--buy"
-                        onclick="showCart();"><span>Купить</span></a>
-                     <a href="#" class="good-options__button good-options__button--tab">В Закладки</a>
+                     <a href="#GoodsInCart" class="good-options__button good-options__button--buy" onclick="showCart();"
+                        aria-label="Купить товар"><span>Купить</span></a>
+                     <a href="#" class="good-options__button good-options__button--tab"
+                        aria-label="Добавить товар в закладки">В Закладки</a>
                   </div>
                </li>
                <li class="catalog__item good-item">
@@ -287,9 +296,10 @@
                   <p class="good-item__price-old">30500 р.</p>
                   <a href="blank.html" class="good-item__price">25500 р.</a>
                   <div class="good-item__options good-options">
-                     <a href="#GoodsInCart" class="good-options__button good-options__button--buy"
-                        onclick="showCart();"><span>Купить</span></a>
-                     <a href="#" class="good-options__button good-options__button--tab">В Закладки</a>
+                     <a href="#GoodsInCart" class="good-options__button good-options__button--buy" onclick="showCart();"
+                        aria-label="Купить товар"><span>Купить</span></a>
+                     <a href="#" class="good-options__button good-options__button--tab"
+                        aria-label="Добавить товар в закладки">В Закладки</a>
                   </div>
                </li>
                <li class="catalog__item good-item new">
@@ -300,9 +310,10 @@
                   <p class="good-item__price-old hidden">22500 р.</p>
                   <a href="blank.html" class="good-item__price">12500 р.</a>
                   <div class="good-item__options good-options">
-                     <a href="#GoodsInCart" class="good-options__button good-options__button--buy"
-                        onclick="showCart();"><span>Купить</span></a>
-                     <a href="#" class="good-options__button good-options__button--tab">В Закладки</a>
+                     <a href="#GoodsInCart" class="good-options__button good-options__button--buy" onclick="showCart();"
+                        aria-label="Купить товар"><span>Купить</span></a>
+                     <a href="#" class="good-options__button good-options__button--tab"
+                        aria-label="Добавить товар в закладки">В Закладки</a>
                   </div>
                </li>
                <li class="catalog__item good-item new">
@@ -313,9 +324,10 @@
                   <p class="good-item__price-old">22500 р.</p>
                   <a href="blank.html" class="good-item__price">15500 р.</a>
                   <div class="good-item__options good-options">
-                     <a href="#GoodsInCart" class="good-options__button good-options__button--buy"
-                        onclick="showCart();"><span>Купить</span></a>
-                     <a href="#" class="good-options__button good-options__button--tab">В Закладки</a>
+                     <a href="#GoodsInCart" class="good-options__button good-options__button--buy" onclick="showCart();"
+                        aria-label="Купить товар"><span>Купить</span></a>
+                     <a href="#" class="good-options__button good-options__button--tab"
+                        aria-label="Добавить товар в закладки">В Закладки</a>
                   </div>
                </li>
                <li class="catalog__item good-item">
@@ -326,9 +338,10 @@
                   <p class="good-item__price-old">30500 р.</p>
                   <a href="blank.html" class="good-item__price">25500 р.</a>
                   <div class="good-item__options good-options">
-                     <a href="#GoodsInCart" class="good-options__button good-options__button--buy"
-                        onclick="showCart();"><span>Купить</span></a>
-                     <a href="#" class="good-options__button good-options__button--tab">В Закладки</a>
+                     <a href="#GoodsInCart" class="good-options__button good-options__button--buy" onclick="showCart();"
+                        aria-label="Купить товар"><span>Купить</span></a>
+                     <a href="#" class="good-options__button good-options__button--tab"
+                        aria-label="Добавить товар в закладки">В Закладки</a>
                   </div>
                </li>
                <li class="catalog__item good-item new">
@@ -339,9 +352,10 @@
                   <p class="good-item__price-old hidden">22500 р.</p>
                   <a href="blank.html" class="good-item__price">12500 р.</a>
                   <div class="good-item__options good-options">
-                     <a href="#GoodsInCart" class="good-options__button good-options__button--buy"
-                        onclick="showCart();"><span>Купить</span></a>
-                     <a href="#" class="good-options__button good-options__button--tab">В Закладки</a>
+                     <a href="#GoodsInCart" class="good-options__button good-options__button--buy" onclick="showCart();"
+                        aria-label="Купить товар"><span>Купить</span></a>
+                     <a href="#" class="good-options__button good-options__button--tab"
+                        aria-label="Добавить товар в закладки">В Закладки</a>
                   </div>
                </li>
             </ul>
@@ -472,10 +486,11 @@
          <a href="catalog.html" class="modal__button  goods-to-cart__link basic-button basic-button--white">Продолжить
             покупки</a>
       </div>
-      <button type="button" aria-label="Закрыть" class="modal__close" onclick="closeCart();"></button>
+      <button type="button" aria-label="Закрыть модальное окно" class="modal__close" onclick="closeCart();"></button>
    </section>
 
    <script src="js/script.js"></script>
+   <script src="js/script.min.js"></script>
 
 </body>
 
