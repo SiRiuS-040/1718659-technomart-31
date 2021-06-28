@@ -947,17 +947,24 @@
    opacity: 0.4;
 }
 
+/**/
+
 .checkbox-group__item input[type="checkbox"]:focus + label::before {
-   -webkit-filter: invert(0%) sepia(74%) saturate(3099%) hue-rotate(30deg) brightness(99%) contrast(106%);
-   filter: invert(0%) sepia(74%) saturate(3099%) hue-rotate(30deg) brightness(99%) contrast(106%);
+   -webkit-filter: invert(89%) sepia(22%) saturate(0%) hue-rotate(157deg) brightness(75%) contrast(86%);
+   filter: invert(89%) sepia(22%) saturate(0%) hue-rotate(157deg) brightness(75%) contrast(86%);
+}
+
+.checkbox-group__item input[type="checkbox"]:focus + label::after {
+   -webkit-filter: invert(89%) sepia(22%) saturate(0%) hue-rotate(157deg) brightness(75%) contrast(86%);
+   filter: invert(89%) sepia(22%) saturate(0%) hue-rotate(157deg) brightness(75%) contrast(86%);
 }
 
 .radio-group__item input[type="radio"]:focus + label::before {
-   border-color: var(--black);
+   border-color: var(--dhusar-grey);
 }
 
 .radio-group__item input[type="radio"]:focus + label::after {
-   background-color: var(--black);
+   background-color: var(--dhusar-grey);
 }
 
 .checkbox-group {
