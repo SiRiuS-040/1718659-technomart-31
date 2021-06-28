@@ -27,4 +27,3 @@ function showMap() {
    var modal = document.getElementById('MapPopUp');
    modal.style.display = 'block';
 }
-
