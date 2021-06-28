@@ -947,6 +947,19 @@
    opacity: 0.4;
 }
 
+.checkbox-group__item input[type="checkbox"]:focus + label::before {
+   -webkit-filter: invert(0%) sepia(74%) saturate(3099%) hue-rotate(30deg) brightness(99%) contrast(106%);
+   filter: invert(0%) sepia(74%) saturate(3099%) hue-rotate(30deg) brightness(99%) contrast(106%);
+}
+
+.radio-group__item input[type="radio"]:focus + label::before {
+   border-color: var(--black);
+}
+
+.radio-group__item input[type="radio"]:focus + label::after {
+   background-color: var(--black);
+}
+
 .checkbox-group {
    margin: 0;
    margin-top: 19px;
