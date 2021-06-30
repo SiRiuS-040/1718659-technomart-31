@@ -254,7 +254,7 @@
    text-align: left;
 }
 
-.not-empty {
+.product-options__item--not-empty {
    background: var(--red-radish);
 }
 
@@ -406,12 +406,16 @@
 
 /* ХЕДЕР - ЛК */
 
-.auth {
+.auth__field {
    margin-top: 4px;
    display: flex;
    justify-content: center;
    flex-wrap: wrap;
    position: relative;
+}
+
+.auth__field--disabled {
+   display: none;
 }
 
 .auth-button {
@@ -1328,6 +1332,7 @@
 
 .features-slide {
    position: relative;
+   max-height: 266px;
 }
 
 .features-slide__info {
@@ -1404,6 +1409,12 @@
 }
 
 .slider-selector__button--current {
+   padding: 0;
+   width: 10px;
+   height: 10px;
+   border: 2px solid var(--white);
+   border-radius: 50%;
+   cursor: pointer;
    background-color: var(--white);
 }
 
@@ -1419,7 +1430,7 @@
    cursor: pointer;
 }
 
-.slider-directions__button--prev {
+.slider-directions__button--previous {
    left: 4%;
 }
 
@@ -2155,7 +2166,7 @@
    filter: drop-shadow(0px 4px 20px var(--black-semi-025));
 }
 
-.goods-to-cart {
+.modal-buy {
    display: none;
 }
 
@@ -2168,7 +2179,7 @@
    font-weight: 700;
 }
 
-.goods-to-cart__title::before {
+.modal-buy__title::before {
    content: "";
    position: absolute;
    background-image: url(../img/icons/icon-mark.svg);
@@ -2182,7 +2193,7 @@
    background-color: var(--beluga);
 }
 
-.goods-to-cart__options {
+.modal-buy__options {
    display: flex;
    justify-content: center;
 }
@@ -2225,13 +2236,13 @@
    height: 21px;
 }
 
-.goods-to-cart__button {
+.modal-buy__button {
    position: absolute;
 }
 
 /* Напишите нам! */
 
-.write-us {
+.modal-form {
    display: none;
    padding-top: 39px;
 }
@@ -2281,10 +2292,8 @@
    height: 114px;
    resize: none;
 }
-.write-us__main {
-}
 
-.write-us__button {
+.modal-form__button {
    width: 460px;
    border: none;
    cursor: pointer;
@@ -2300,4 +2309,99 @@
 
 .modal-map iframe {
    border: none;
+}
+
+/* JS */
+
+/* Модальные окна*/
+
+.modal__show {
+   display: block;
+   -webkit-animation: bounce 0.6s;
+   animation: bounce 0.6s;
+}
+
+.modal__error {
+   -webkit-animation: shake 0.6s;
+   animation: shake 0.6s;
+}
+
+@-webkit-keyframes bounce {
+   0% {
+      transform: translateY(-2000px);
+   }
+
+   70% {
+      transform: translateY(30px);
+   }
+
+   90% {
+      transform: translateY(-10px);
+   }
+
+   100% {
+      transform: translateY(0);
+   }
+}
+
+@keyframes bounce {
+   0% {
+      transform: translateY(-2000px);
+   }
+
+   70% {
+      transform: translateY(30px);
+   }
+
+   90% {
+      transform: translateY(-10px);
+   }
+
+   100% {
+      transform: translateY(0);
+   }
+}
+
+@-webkit-keyframes shake {
+   0%,
+   100% {
+      transform: translateX(0);
+   }
+
+   10%,
+   30%,
+   50%,
+   70%,
+   90% {
+      transform: translateX(-10px);
+   }
+
+   20%,
+   40%,
+   60%,
+   80% {
+      transform: translateX(10px);
+   }
+}
+
+@keyframes shake {
+   0%,
+   100% {
+      transform: translateX(0);
+   }
+
+   10%,
+   30%,
+   50%,
+   70%,
+   90% {
+      transform: translateX(-10px);
+   }
+
+   20%,
+   40%,
+   60%,
+   80% {
+      transform: translateX(10px);
+   }
 }
