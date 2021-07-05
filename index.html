@@ -13,9 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&display=swap"
     rel="stylesheet">
-  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/normalize.min.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
   <link href="css/style.min.css" rel="stylesheet">
 
 </head>
@@ -269,7 +267,7 @@
           </li>
           <li class="popular-section__item manufacturer">
             <a href="blank.html" class="manufacturer__link">
-              <img src="img/popular_manufacturers/hitachi.png" width="169" width="31" alt="hitachi"
+              <img src="img/popular_manufacturers/hitachi.png" width="169" height="31" alt="hitachi"
                 class="manufacturer__logo">
             </a>
           </li>
@@ -362,21 +360,21 @@
             Напишите нам!</a>
         </div>
       </div>
-      </div>
     </section>
   </main>
   <footer>
-    <section class="footer footer-top">
+    <div class="footer footer-top">
       <div class="container">
         <div class="footer__top">
           <section class="footer__section company-info">
+            <h2 class="visually-hidden">Как нас найти</h2>
             <a href="#" class="logo company-info__logo">
               <img src="img/logo/logo-technomart.svg" width="138" height="23" alt="Логотип Техномарт">
             </a>
             <p class="company-info__adress">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
             <p class="company-info__phone">+7 800 555-86-28</p>
           </section>
-          <section class="footer__section footer-nav">
+          <div class="footer__section footer-nav">
             <ul class="footer-nav__list">
               <li class="footer-nav__item">
                 <a href="blank.html" class="footer-nav__link">Компания</a>
@@ -408,38 +406,38 @@
                 <a href="blank.html" class="footer-nav__link footer-nav__link--goods">Спецпредложения</a>
               </li>
             </ul>
-          </section>
+          </div>
         </div>
       </div>
-    </section>
-    <section class="footer footer-bottom">
+    </div>
+    <div class="footer footer-bottom">
       <div class="container">
         <div class="footer__bottom">
           <div class="footer__copyright copyright">
             <p class="copyright__desc">© 2010–2021 Компания «Техномарт»</p>
             <p class="copyright__desc">Все права защищены</p>
           </div>
-          <section class="footer__section social">
-            <h2 class="social__title">Мы в сети!</h2>
+          <div class="footer__section social">
+            <h2 class="visually-hidden">Мы в сети!</h2>
             <ul class="socials__list">
               <li class="social__item">
-                <a href="blank.html" class="social__link">
+                <a href="blank.html" class="social__link" aria-label="Вконтакте">
                   <img src="img/socials/icon-vk.svg" width="25" height="14" alt="VK">
                 </a>
               </li>
               <li class="social__item">
-                <a href="blank.html" class="social__link">
+                <a href="blank.html" class="social__link" aria-label="Фейсбук">
                   <img src="img/socials/icon-fb.svg" width="12" height="22" alt="FB">
                 </a>
               </li>
               <li class="social__item">
-                <a href="blank.html" class="social__link">
+                <a href="blank.html" class="social__link" aria-label="Инстаграм">
                   <img src="img/socials/icon-inst.svg" width="21" height="21" alt="Inst">
                 </a>
               </li>
             </ul>
-          </section>
-          <section class="footer__section feedback">
+          </div>
+          <div class="footer__section feedback">
             <p class="feedback__item">Обратная связь:
               <a href="mailto:mail@htmlacademy.ru" class="feedback__link">mail@htmlacademy.ru</a>
             </p>
@@ -447,10 +445,10 @@
               <a href="https://htmlacademy.ru/intensive/htmlcss" class="feedback__link"
                 target="_blank">htmlacademy.ru</a>
             </p>
-          </section>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
   </footer>
 
   <section class="modal modal-buy">
@@ -497,13 +495,6 @@
       title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"></iframe>
     <button type="button" aria-label="Закрыть модальное окно" class="modal__close"></button>
   </section>
-
-  <script src="js/slidermain.js"></script>
-  <script src="js/sliderservices.js"></script>
-  <script src="js/buygoods.js"></script>
-  <script src="js/form.js"></script>
-  <script src="js/map.js"></script>
-  <script src="js/auth.js"></script>
 
   <script src="js/slidermain.min.js"></script>
   <script src="js/sliderservices.min.js"></script>

@@ -472,6 +472,8 @@
    width: 100%;
    text-align: center;
    position: relative;
+   padding-left: 40px;
+   padding-right: 50px;
 }
 
 .auth__button--logout {
