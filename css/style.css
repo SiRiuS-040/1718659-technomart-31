@@ -376,7 +376,7 @@
    line-height: 30px;
    text-align: left;
    color: var(--red-radish);
-   border: 3px solid #ffffff;
+   border: 3px solid var(--black);
    box-sizing: border-box;
    position: relative;
 }
@@ -2281,7 +2281,7 @@
 .form__label {
    display: block;
    padding-bottom: 11px;
-   font-family: "Cuprum";
+   font-family: "Cuprum", Arial, sans-serif;
    font-size: 18px;
    line-height: 24px;
 }
@@ -2293,7 +2293,7 @@
    border: 2px solid var(--lunar-rock);
    border-radius: 2px;
    box-sizing: border-box;
-   font-family: "PT Sans";
+   font-family: "PT Sans", Arial, sans-serif;
    font-size: 13px;
    line-height: 24px;
    text-align: left;
